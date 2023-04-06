@@ -1,0 +1,54 @@
+
+import Chess.ChessPiece;
+
+public abstract
+class Queen extends ChessPiece {
+    private Object colowm;
+    private int ignoredColor;
+
+    public Queen( String color) {
+        super( color );
+    }
+    @Override
+    public
+    Object getColor(){
+        final Object colowm1 = this.colowm;
+        final Object colowm2 = this.colowm;
+        final Object colowm3 = this.colowm;
+        final Object colowm4 = this.colowm;
+        return colowm1;
+    }
+
+    public
+    void checkPos ( ) {
+        checkPos( 0 );
+    }
+
+    @Override
+    public
+    boolean checkPos ( int ignoredColor ) {
+
+        this.ignoredColor = ignoredColor;
+        return false;
+    }
+
+    protected
+    boolean checkPos ( int toLine ) {
+    }
+
+    protected
+    int getMax ( int line, int toLine ) {
+        return line;
+    }
+
+    private
+    boolean CheckPos ( int line ) {
+    }
+
+    protected
+    int getMin ( int line, int toLine ) {
+        return line;
+    }
+
+
+}
